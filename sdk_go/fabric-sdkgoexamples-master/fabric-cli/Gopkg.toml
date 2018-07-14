@@ -1,0 +1,4 @@
+
+[[constraint]]
+  name = "github.com/hyperledger/fabric-sdk-go"
+  revision = "fda0d9a039dd3afc034e970023e51cd7690bb6d7"
