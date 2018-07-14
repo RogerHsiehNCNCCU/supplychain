@@ -1,0 +1,28 @@
+{
+    "name": "bikesharing-network",
+    "version": "0.0.3",
+    "description": "A Fabric-Composer blockchain business network for bike sharing.",
+    "main": "server/server.js",
+    "scripts": {
+        "dev": "nodemon server/server.js"
+    },
+    "author": "administrator",
+    "email": "administrator@org.bikesharing.biznet",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "composer-admin": "^0.19.4",
+        "composer-cli": "^0.19.4",
+        "composer-client": "^0.19.11",
+        "composer-common": "^0.19.4",
+        "composer-connector-embedded": "^0.19.4",
+        "composer-cucumber-steps": "^0.19.4",
+        "nodemon": "^1.17.5"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "ejs": "^2.6.1",
+        "express": "^4.16.3",
+        "mongodb": "^2.2.16",
+        "node-fetch": "^2.1.2"
+    }
+}

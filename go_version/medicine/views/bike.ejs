@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+    <title>Insert title here</title>
+</head>
+<style>
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+table,
+th,
+td {
+    border: 0.5px solid black;
+}
+</style>
+
+<body>
+    <div class="center">
+        <%- include header %>
+            <p>
+                <font size="20">PoC資訊</font>
+                <p>
+                    <table style="width:100%">
+                        <tr>
+                            <th>編號</th>
+                            <th>$class</th>
+                            <th>status</th>
+                            <th>provider</th>
+                            <th>remark</th>
+                        </tr>
+                        <% for (var i = 0; i < data.length; i++) {  %>
+                            <tr>
+                                <td>
+                                    <%= i %>
+                                </td>
+                                <td>
+                                    <%= data[i].Key %>
+                                </td>
+                                <td>
+                                    <%= data[i].Record.Name %>
+                                </td>
+                                <td>
+                                    <%= data[i].Record.Token %>
+                                </td>
+                                <td>
+                                    <%= data[i].Record.Role %>
+                                </td>
+                                <td>
+                                    <% var link = "/update_bike/"+data[i].aid %>
+                                    <a href= <%= link %> >更新</a>
+                                </td>
+                                <td>
+                                    <% var del = "/delete_bike/"+data[i].aid %>
+                                    <a href= <%= del %> >刪除</a>
+                                </td>
+                            </tr>
+                            <% } %>
+                    </table>
+                <p>
+                        <a href="/addworklog">建立</a>
+</body>
+
+</html>
