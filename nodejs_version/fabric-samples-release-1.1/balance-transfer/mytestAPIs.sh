@@ -43,11 +43,7 @@ function setChaincodePath(){
 		CC_SRC_PATH="github.com/example_cc/go"
 		;;
 		"node")
-<<<<<<< HEAD
 		CC_SRC_PATH="$PWD/artifacts/src/github.com/example_cc/node2"
-=======
-		CC_SRC_PATH="$PWD/artifacts/src/github.com/example_cc/node"
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 		;;
 		*) printf "\n ------ Language $LANGUAGE is not supported yet ------\n"$
 		exit 1

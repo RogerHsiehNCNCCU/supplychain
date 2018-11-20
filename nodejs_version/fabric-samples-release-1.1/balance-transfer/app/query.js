@@ -45,13 +45,8 @@ var queryChaincode = async function(peer, channelName, chaincodeName, args, fcn,
 				logger.info(args[0]+' now has ' + response_payloads[i].toString('utf8') +
 					' after the move');
 			}
-<<<<<<< HEAD
 			//return args[0]+' now has ' + response_payloads[0].toString('utf8') +' after the move';
-            return JSON.stringify(response_payloads[0].toString('utf8'));
-=======
-			return args[0]+' now has ' + response_payloads[0].toString('utf8') +
-				' after the move';
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
+            return JSON.stringify(response_payloads[0]);
 		} else {
 			logger.error('response_payloads is null');
 			return 'response_payloads is null';

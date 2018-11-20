@@ -3,11 +3,7 @@ const fetch = require('node-fetch');
 var http = require('http');
 var querystring = require('querystring');
 
-<<<<<<< HEAD
 const url = "106.14.177.83"
-=======
-const url = "140.119.19.108"
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 
 module.exports = function(app, db) {
     var options = {
@@ -30,11 +26,7 @@ module.exports = function(app, db) {
                 console.log('BODY: ' + chunk);
             });
         }).end();*/
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/QueryAllPoCs')
-=======
-        fetch('http://140.119.19.108:3000/QueryAllPoCs')
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             .then(res => res.text())
             .then((query_responses) => {
                 console.log("query_responses is ", query_responses);
@@ -64,11 +56,7 @@ module.exports = function(app, db) {
     });
 
     app.get('/InitLedger', function(req, res) {
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/InitLedger')
-=======
-        fetch('http://140.119.19.108:3000/InitLedger')
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             .then(res => res.json())
             .then(json => console.log(json));
 
@@ -83,11 +71,7 @@ module.exports = function(app, db) {
     app.post('/UploadData', function(req, res) {
         var args={ Name:String(req.body.Name), Efficacy:String(req.body.Efficacy), Color:String(req.body.Color),
             Owner:String(req.body.Owner)};
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/UploadData', { 
-=======
-        fetch('http://140.119.19.108:3000/UploadData', { 
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             method: 'POST',
             body:    JSON.stringify(args),
             headers: { 'Content-Type': 'application/json' },
@@ -102,11 +86,7 @@ module.exports = function(app, db) {
     app.post('/bike', (req, res) => {
         var args={ $class:String(req.body.$class), status:String(req.body.status), provider:String(req.body.provider),
              remark:String(req.body.remark), aid:String(req.body.aid)};
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/api/Bike', { 
-=======
-        fetch('http://140.119.19.108:3000/api/Bike', { 
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             method: 'POST',
             body:    JSON.stringify(args),
             headers: { 'Content-Type': 'application/json' },
@@ -119,11 +99,7 @@ module.exports = function(app, db) {
     //修改一台腳踏車
     app.get('/update_bike/:bike_Id', function(req, res) {
         console.log(req.params.bike_Id);
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/api/Bike/'+req.params.bike_Id)
-=======
-        fetch('http://140.119.19.108:3000/api/Bike/'+req.params.bike_Id)
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             .then(res => res.text())
             .then((query_responses) => {
                 let result = JSON.parse(query_responses.toString());
@@ -135,11 +111,7 @@ module.exports = function(app, db) {
     app.post('/update_bike/:bike_Id', (req, res) => {
         var args={ $class:String(req.body.$class), status:String(req.body.status), provider:String(req.body.provider),
             remark:String(req.body.remark), aid:String(req.body.aid)};
-<<<<<<< HEAD
             fetch('http://106.14.177.83:3000/api/Bike/'+args.aid, { 
-=======
-            fetch('http://140.119.19.108:3000/api/Bike/'+args.aid, { 
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
                 method: 'PUT',
                 body:    JSON.stringify(args),
                 headers: { 'Content-Type': 'application/json' },
@@ -153,11 +125,7 @@ module.exports = function(app, db) {
     //刪除一台腳踏車
     app.get('/delete_bike/:bike_Id', function(req, res) {
         console.log(req.params.bike_Id);
-<<<<<<< HEAD
         fetch('http://106.14.177.83:3000/api/Bike/'+req.params.bike_Id)
-=======
-        fetch('http://140.119.19.108:3000/api/Bike/'+req.params.bike_Id)
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             .then(res => res.text())
             .then((query_responses) => {
                 let result = JSON.parse(query_responses.toString());
@@ -169,11 +137,7 @@ module.exports = function(app, db) {
     app.post('/delete_bike/:bike_Id', (req, res) => {
         var args={ $class:String(req.body.$class), status:String(req.body.status), provider:String(req.body.provider),
             remark:String(req.body.remark), aid:String(req.body.aid)};
-<<<<<<< HEAD
             fetch('http://106.14.177.83:3000/api/Bike/'+args.aid, { 
-=======
-            fetch('http://140.119.19.108:3000/api/Bike/'+args.aid, { 
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
                 method: 'DELETE',
                 //body:    JSON.stringify(args),
                 headers: { 'Content-Type': 'application/json' },

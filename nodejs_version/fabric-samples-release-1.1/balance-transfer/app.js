@@ -261,7 +261,7 @@ app.post('/channels/:channelName/chaincodes/:chaincodeName', async function(req,
 	var peers = req.body.peers;
 	var chaincodeName = req.params.chaincodeName;
 	var channelName = req.params.channelName;
-	var fcn = req.body.fcn;
+	var fcn = req.body.datasend.fcn;
 	var args = req.body.args;
 	logger.debug('channelName  : ' + channelName);
 	logger.debug('chaincodeName : ' + chaincodeName);
@@ -322,11 +322,7 @@ app.get('/channels/:channelName/chaincodes/:chaincodeName', async function(req, 
 	logger.debug(args);
 
 	let message = await query.queryChaincode(peer, channelName, chaincodeName, args, fcn, req.username, req.orgname);
-<<<<<<< HEAD
 	res.send(JSON.parse(message));
-=======
-	res.send(message);
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 });
 //  Query Get Block by BlockNumber
 app.get('/channels/:channelName/blocks/:blockId', async function(req, res) {
