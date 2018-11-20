@@ -7,7 +7,4 @@
 
 * Golang
 * Nodejs
-<<<<<<< HEAD
 
-=======
->>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
