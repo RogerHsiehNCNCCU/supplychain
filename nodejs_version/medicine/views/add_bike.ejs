@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=BIG5">
+<title>Insert title here</title>
+</head>
+<style>
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+</style>
+
+<body>
+<div class = "center">
+<%- include header %>
+<form method="post" action='/bike'>
+<p>
+<font size="20">新增腳踏車</font>
+<p>
+作者:<input id="column" name="$class" type="text" value="" size="20" required></li>
+<p>
+內容:<input id="column" name="status" type="text" value="" size="20" required></li>
+<p>
+url:<input id="column" name="provider" type="text" value="" size="20" required></li>
+<p>
+project:<input id="column" name="remark" type="text" value="" size="20" required></li>
+<p>
+project  owner:<input id="column" name="aid" type="text" value="" size="20" required></li>
+<p>
+
+<button type="submit">submit</button>
+</form>
+</div>
+</body>
+</html>
