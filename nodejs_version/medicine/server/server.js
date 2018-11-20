@@ -7,6 +7,7 @@ const app            = express();
 
 const port = 8000;
 
+<<<<<<< HEAD
 //為了使用cookie以及mysql的部分
 const cookieParser = require('cookie-parser');
 const mysql = require("mysql");
@@ -29,18 +30,23 @@ con.connect(function (err){
     console.log('connecting success');
 });
 
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));//should see the body as an object in the terminal
 app.use( express.static( "public" ) );//為了引入image、js等檔案
 
+<<<<<<< HEAD
 app.use(function (req, res, next){
     req.con=con;
     next();
 });
 app.use(cookieParser());
 
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 require('../app/routes')(app, {});
 app.listen(port, () => {
   console.log('We are live on ' + port);

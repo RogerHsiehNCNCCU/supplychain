@@ -6,6 +6,7 @@ let Chaincode = class {
     
     async Init(stub){
         console.info('====== Instantiated unity chaincode =======');
+<<<<<<< HEAD
         let ret = stub.getFunctionAndParameters();
         console.info(ret);
         let args = ret.params;
@@ -34,6 +35,9 @@ let Chaincode = class {
         } catch (err) {
           return shim.error(err);
         }
+=======
+        return shim.success();
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
     }
     
     // The Invoke method is called as a result of an application request to run the Smart Contract
@@ -56,6 +60,7 @@ let Chaincode = class {
         }
     }
     
+<<<<<<< HEAD
     //測試用的function
     async queryTest(stub, args, thisClass){
       console.info('============ START : queryTest ============');
@@ -77,12 +82,22 @@ let Chaincode = class {
         var timeFullString = time[0]+time[1]+time[2]+time[3]+time[4]+time[5];
         var ymd = time[0]+time[1]+time[2];
         var hms = time[3]+":"+time[4]+":"+time[5];
+=======
+    //初始化各個腳色及數據
+    async initLedger(stub, args, thisClass){
+        console.info('====== START : initialize Ledger ======');
+        var time = this.Now();
+        var timeFullString = time[0]+time[1]+time[2]+time[3]+time[4]+time[5];
+        var ymd = time[0]+time[1]+time[2];
+        var hms = time[3]+time[4]+time[5];
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         let Materials = [];
         //MaterialID 在 putstate時再加入在Key    Key : value
         Materials.push({
             Name: 'gochi',
             Efficacy: 'good for body',
             Color: 'red',
+<<<<<<< HEAD
             HarvestBatch: 'B1',
             Action: '採收、初加工',
             Place: '四川',
@@ -93,6 +108,8 @@ let Chaincode = class {
             Fertilizer: '過磷酸鈣',
             FirstBatch: 'F1',
             Skill: '曝曬',
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             OwnerID: 'POC0',
             TimeStampDate: ymd,
             TimeStampTime: hms,
@@ -101,6 +118,7 @@ let Chaincode = class {
             Name: '山藥',
             Efficacy: '保健美容',
             Color: 'purple',
+<<<<<<< HEAD
             HarvestBatch: 'B2',
             Action: '採收、初加工',
             Place: '南投',
@@ -111,6 +129,8 @@ let Chaincode = class {
             Fertilizer: '硫酸鉀',
             FirstBatch: 'F2',
             Skill: '去皮',
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             OwnerID: 'POC1',
             TimeStampDate: ymd,
             TimeStampTime: hms,
@@ -119,6 +139,7 @@ let Chaincode = class {
             Name: '蓮子',
             Efficacy: '美白',
             Color: 'white',
+<<<<<<< HEAD
             HarvestBatch: 'B3',
             Action: '採收、初加工',
             Place: '釜山',
@@ -134,6 +155,13 @@ let Chaincode = class {
             TimeStampTime: hms,
         });
 
+=======
+            OwnerID: 'POC2',
+            TimeStampDate: ymd,
+            TimeStampTime: hms,
+        });
+        
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         let TMC = [{
             Name : 'TMC',
             Token : '29850000',
@@ -141,7 +169,10 @@ let Chaincode = class {
             TimeStampTime: hms,
         }];  
     
+<<<<<<< HEAD
         
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         let PoC = [{
             Name : 'farmer1',
             Token : 10000,
@@ -234,7 +265,10 @@ let Chaincode = class {
             TimeStampTime: hms,
         }];
         
+<<<<<<< HEAD
         
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         let TransactionRecord = [{
             Action : 'upload',
             Fee : 5,
@@ -247,6 +281,7 @@ let Chaincode = class {
             Participant : 'POC0',
             TimeStampDate: ymd,
             TimeStampTime: hms,
+<<<<<<< HEAD
         },{
             Action : 'get',
             Fee : 5,
@@ -265,6 +300,8 @@ let Chaincode = class {
             Participant : 'POC0',
             TimeStampDate: ymd,
             TimeStampTime: hms,
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         }];
         
         
@@ -272,6 +309,7 @@ let Chaincode = class {
           Materials[i].docType = 'material';
           await stub.putState('MATERIAL' + i, Buffer.from(JSON.stringify(Materials[i])));
           console.info('Added <--> ', Materials[i]);
+<<<<<<< HEAD
             
           //建立composite key，可以進行不同值的query
           let indexName = 'HarvestBatch~MATERIAL';
@@ -285,6 +323,10 @@ let Chaincode = class {
         
         
         
+=======
+        }
+
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         for (let i=0; i< TMC.length; i++){
           TMC[i].docType = 'tmc';
           await stub.putState('TMC' + i, Buffer.from(JSON.stringify(TMC[i])));
@@ -296,12 +338,15 @@ let Chaincode = class {
           await stub.putState('POC' + i, Buffer.from(JSON.stringify(PoC[i])));
           console.info('Added <-->, ', PoC[i]);
         }  
+<<<<<<< HEAD
         //測試函數用
         for (let i=0; i< TransactionRecord.length; i++){
           TransactionRecord[i].docType = 'transactionRecord';
           await stub.putState('TRANSACTIONRECORD' + i, Buffer.from(JSON.stringify(TransactionRecord[i])));
           console.info('Added <-->, ', TransactionRecord[i]);
         }  
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
     
         console.info('============= END : initialize Ledger ===========');
     }
@@ -309,6 +354,7 @@ let Chaincode = class {
     //上傳數據(食品藥材 Material)
     async uploadData(stub, args, thisClass){
         console.info('====== START : upload Data ======');
+<<<<<<< HEAD
         var time = thisClass.Now();
         var timeFullString = time[0]+time[1]+time[2]+time[3]+time[4]+time[5];
         var ymd = time[0]+time[1]+time[2];
@@ -316,6 +362,13 @@ let Chaincode = class {
         
         if(args.length !=14){
             throw new Error('Incorrect number of arguments. Expecting 14');
+=======
+        var time = this.Now();
+        var timeFullString = time.[0]+time[1]+time[2]+time[3]+time[4]+time[5];
+        
+        if(args.length !=4){
+            throw new Error('Incorrect number of arguments. Expecting 4');
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         }
 
         var material = {
@@ -323,6 +376,7 @@ let Chaincode = class {
             Name: args[0],
             Efficacy: args[1],
             Color: args[2],
+<<<<<<< HEAD
             HarvestBatch: args[3],
             Action: args[4],
             Place: args[5],
@@ -380,16 +434,43 @@ let Chaincode = class {
         for(var i=0;i<results.length;i++){
             if(results[i].Record.Action=="upload" && results[i].Record.TimeStampDate==time[0]+time[1]+time[2] && results[i].Record.Participant==args[13]){
                 todayRecord.push(results[i]);
+=======
+            OwnerID: args[3]
+        };
+        let method = thisClass['queryAllByKey'];
+        let queryResults = await method(stub,'MATERIAL',thisClass);
+        //未必對
+        let queryResultsParse = JSON.parse(queryResults);
+        await stub.putState("MATERIAL"+queryResultsParse.length+1, Buffer.from(JSON.stringify(material)));
+        
+        //檢查是否超出一日100額度，並儲值10 token
+        //因為couchdb才能使用rich query，這邊先使用Key的query
+        let queryPocResults = await stub.getState(args[3]);
+        let queryPocResultsParse = JSON.parse(queryPocResults);
+        
+        var time= this.Now();
+        let queryTransactionRecordResults = method(stub,'TRANSACTIONRECORD',thisClass);
+        let queryTransactionRecordResultsParse = JSON.parse(queryTransactionRecordResults);
+        let todayRecord = [];
+        for(var i=0;i<queryTransactionRecordResultsParse.length;i++){
+            if(queryTransactionRecordResultsParse[i].Action=="upload" && queryTransactionRecordResultsParse[i].TimeStampDate==time[0]+time[1]+time[2] && queryTransactionRecordResultsParse[i].Participant==args[3]){
+                todayRecord.append(queryTransactionRecordResultsParse[i]);
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             }
         }
         if(todayRecord.length<10){//如果當日小於10比上傳，加10 token
             queryPocResultsParse.Token += 10;
+<<<<<<< HEAD
             await stub.putState(args[13], Buffer.from(JSON.stringify(queryPocResultsParse)));
+=======
+            stub.putState(args[3], Buffer.from(JSON.stringify(queryPocResultsParse)));
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             
             //數據銀行Token減10
             let queryTMCResults = await stub.getState("TMC0");
             let queryTMCResultsParse = JSON.parse(queryTMCResults);
             queryTMCResultsParse.Token -= 10;
+<<<<<<< HEAD
             await stub.putState("TMC0",Buffer.from(JSON.stringify(queryTMCResultsParse)));
         }
         //JSON.stringify(response_payloads[0].toString('utf8'))
@@ -398,6 +479,10 @@ let Chaincode = class {
             Action: "upload", Fee:0, Participant: args[13], TimeStampDate: time[0]+time[1]+time[2], TimeStampTime:time[3]+time[4]+time[5]
         };
         await stub.putState("TRANSACTIONRECORD"+results.length,Buffer.from(JSON.stringify(transactionRecord)));
+=======
+            stub.putState("TMC0",Buffer.from(JSON.stringify(queryTMCResultsParse)));
+        }
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         
         console.info('============= END : upload Data ===========');
     }
@@ -407,14 +492,19 @@ let Chaincode = class {
         let startKey = args[0]+'0';
         let endKey = args[0]+'99999';
         
+<<<<<<< HEAD
         let iterator = await stub.getStateByRange(startKey, endKey);
         let method = thisClass['getAllResults'];
+=======
+        let iterator = await stub.getStartByRange(startKey, endKey);
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         let results = await method(iterator, false);
         
         return Buffer.from(JSON.stringify(results));
         
         console.info('===== END : query All By Key =====');
     }
+<<<<<<< HEAD
     async queryAllByKeyWithoutBuffer(stub, args, thisClass){
         console.info('===== START : query All By Key =====');
         let startKey = args[0]+'0';
@@ -428,6 +518,8 @@ let Chaincode = class {
         
         console.info('===== END : query All By Key =====');
     }
+=======
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
     
     //數據查詢
     async queryData(stub, args, thisClass){
@@ -442,11 +534,16 @@ let Chaincode = class {
         let queryPocResultsParse = JSON.parse(queryPocResults);
         if(queryPocResultsParse.Token>=5){
             queryPocResultsParse.Token -=5;
+<<<<<<< HEAD
             await stub.putState(args[1],Buffer.from(JSON.stringify(queryPocResultsParse)));
+=======
+            stub.putState(args[1],Buffer.from(JSON.stringify(queryPocResultsParse)));
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             
             let queryMaterialResults = await stub.getState(args[0]);
             let queryMaterialResultsParse = JSON.parse(queryMaterialResults);
             
+<<<<<<< HEAD
 //            let method = thisClass['queryDataInsert'];
 //            let queryDataInsert = await method(stub,args,thisClass);
             
@@ -455,11 +552,19 @@ let Chaincode = class {
             let queryPoc2ResultsParse = JSON.parse(queryPoc2Results);
             queryPoc2ResultsParse.Token = queryPoc2ResultsParse.Token + 5 * 0.98;
             await stub.putState(queryMaterialResultsParse.OwnerID,Buffer.from(JSON.stringify(queryPoc2ResultsParse)));
+=======
+            //查詢資料擁有者(PoC2) + 5 * 0.98 Token
+            let queryPoc2Results = await stub.getState(queryMaterialResultsParse.Owner);
+            let queryPoc2ResultsParse = JSON.parse(queryPoc2Results);
+            queryPoc2ResultsParse.Token = queryPoc2ResultsParse.Token + 5 * 0.98;
+            stub.putState(queryMaterialResultsParse.Owner,Buffer.from(JSON.stringify(queryPoc2ResultsParse)));
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
             
             //數據銀行收益2%
             let queryTMCResults = await stub.getState("TMC0");
             let queryTMCResultsParse = JSON.parse(queryTMCResults);
             queryTMCResultsParse.Token = queryTMCResultsParse.Token+ 5*0.02;
+<<<<<<< HEAD
             await stub.putState("TMC0", Buffer.from(JSON.stringify(queryTMCResultsParse)));
             
             //紀錄transactionRecord
@@ -561,6 +666,24 @@ let Chaincode = class {
         }else{ //積分不夠支付 5 token
             //引導到積分充值畫面
             console.log("引導到積分充值畫面");
+=======
+            stub.putState("TMC0", Buffer.from(JSON.stringify(queryTMCResultsParse)));
+            
+            //紀錄transactionRecord
+            var time = this.Now();
+            let method = thisClass['queryAllByKey'];
+            let queryTransactionRecordResults = await method(iterator, false);
+            let queryTransactionRecordResultsParse = JSON.parse(queryTransactionRecordResults);
+            let transactionRecord = {
+                Action: "get", fee:5, participant: queryPocResultsParse.Name, TimeStampymd: time[0]+time[1]+time[2], TimeStamphms:time[3]+time[4]+time[5]
+            };
+            stub.putState("TRANSACTIONRECORD"+queryTransactionRecordResultsParse.length+1,Buffer.from(JSON.stringify(transactionRecord)));
+            
+            return Buffer.from(JSON.stringify(queryMaterialResults));
+            
+        }else{ //積分不夠支付 5 token
+            //引導到積分充值畫面
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         }
         
         console.info('============= END : Upload Data ===========');
@@ -574,6 +697,7 @@ let Chaincode = class {
         
         //支付後才進入儲值階段，支付是線下處理
         
+<<<<<<< HEAD
         //數據銀行的Token要扣掉(像銀行發錢一樣)
         let queryTMCResults = await stub.getState("TMC0");
         let queryTMCResultsParse = JSON.parse(queryTMCResults);
@@ -602,6 +726,13 @@ let Chaincode = class {
             Action: "store", Fee:0, Participant: args[0], TimeStampDate: time[0]+time[1]+time[2], TimeStampTime:time[3]+time[4]+time[5]
         };
         await stub.putState("TRANSACTIONRECORD"+results.length,Buffer.from(JSON.stringify(transactionRecord)));
+=======
+        let queryPocResults = await stub.getState(args[0]);
+        let queryPocResultsParse = JSON.parse(queryPocResults);
+        queryPocResultsParse.Token += args[1];
+        
+        stub.putState(args[0], Buffer.from(JSON.stringify(queryPocResultParse)));
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
         
         console.info('============= END : token Store ===========');
     }
@@ -688,6 +819,7 @@ let Chaincode = class {
 
         await stub.putState(args[0], Buffer.from(JSON.stringify(user)));
         console.info('============= END : Create user ===========');
+<<<<<<< HEAD
     }
     
 //    async queryAllDatas(stub, args, thisClass) {
@@ -720,6 +852,40 @@ let Chaincode = class {
 //        let queryResults = await method(stub, JSON.stringify(queryString), thisClass);
 //        return queryResults;
 //    }
+=======
+      }
+    
+    async queryAllDatas(stub, args, thisClass) {
+        console.info('============ START : queryAllDatas ============');
+        let startKey = 'DATA0';
+        let endKey = 'DATA99999';
+
+        let iterator = await stub.getStateByRange(startKey, endKey);
+
+        let method = thisClass['getAllResults'];
+        let results = await method(iterator, false);
+
+        return Buffer.from(JSON.stringify(results));
+    } 
+    
+    //rich query需要有CouchDB 現在環境沒有CouchDB
+    async queryCarBymake(stub, args, thisClass) {
+    
+        if (args.length < 1){
+            throw new Error('Incorrect number of arguments. Expecting make.');
+        }
+
+        //let make = args[0].toLowerCase();
+        let make = args[0];
+        let queryString = {};
+        queryString.selector = {};
+        queryString.selector.docType = 'car';
+        queryString.selector.make = make;
+        let method = thisClass['getQueryResultForQueryString'];
+        let queryResults = await method(stub, JSON.stringify(queryString), thisClass);
+        return queryResults;
+    }
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
     
     async getAllResults(iterator, isHistory) {
         let allResults = [];
@@ -764,6 +930,7 @@ let Chaincode = class {
     // getQueryResultForQueryString executes the passed in query string.
     // Result set is built and returned as a byte array containing the JSON results.
     // =========================================================================================
+<<<<<<< HEAD
 //    async getQueryResultForQueryString(stub, queryString, thisClass) {
 //  
 //      console.info('- getQueryResultForQueryString queryString:\n' + queryString)
@@ -775,6 +942,19 @@ let Chaincode = class {
 //  
 //      return Buffer.from(JSON.stringify(results));
 //    }
+=======
+    async getQueryResultForQueryString(stub, queryString, thisClass) {
+  
+      console.info('- getQueryResultForQueryString queryString:\n' + queryString)
+      let resultsIterator = await stub.getQueryResult(queryString);
+      let method = thisClass['getAllResults'];
+  
+      let results = await method(resultsIterator, false);
+      //let results = await getAllResults(resultsIterator, false);
+  
+      return Buffer.from(JSON.stringify(results));
+    }
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
     
     Now(){
         var y,mon,d,h,min,s;

@@ -166,7 +166,11 @@ var invokeChaincode = async function(peerNames, channelName, chaincodeName, fcn,
 			'Successfully invoked the chaincode %s to the channel \'%s\' for transaction ID: %s',
 			org_name, channelName, tx_id_string);
 		logger.info(message);
+<<<<<<< HEAD
         //回傳tx ID!!!
+=======
+
+>>>>>>> 8ca56d0a681ff46253f6c8281d193d5341ddd019
 		return tx_id_string;
 	} else {
 		let message = util.format('Failed to invoke chaincode. cause:%s',error_message);
