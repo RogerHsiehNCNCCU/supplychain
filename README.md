@@ -9,10 +9,10 @@
 * Nodejs
 
 
-#Fabric and Sawtooth smart contract analysis
+# Fabric and Sawtooth smart contract analysis
 * Introduce Fabric and Sawtooth 
 * Compare Fabric and Sawtooth
 * Analyse Fabric and Sawtooth smart contract
 
-#How Sawtooth convert to Fabric
+# How Sawtooth convert to Fabric
 List the examples of Sawtooth and Fabric. Try to convert through Smart Contract and Client side.
