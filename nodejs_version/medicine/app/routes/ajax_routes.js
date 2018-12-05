@@ -44,14 +44,14 @@ module.exports = function(app, db) {
 //        var myHeaders = new Headers();
 //        //傳出去的body要跟這邊宣告的格式型態一樣
 //        myHeaders.append( "Content-Type","application/json");
-//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
 //        fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
 //            method: 'POST',
 //            body:    JSON.stringify(datasend),
 //            credentials: "include",
 //            headers: myHeaders,
 //            //headers: { 'Content-Type': "application/json; charset=utf-8" ,
-//                     //"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY"},
+//                     //"Authorization": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ"},
 //        })
 //           .then(res => res.text())//回傳tx ID
 //           .then(text => res.send(text))
@@ -322,7 +322,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -367,7 +367,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -396,7 +396,7 @@ module.exports = function(app, db) {
 //        };
 //        var myHeaders = new Headers();
 //        myHeaders.append( "Content-Type","application/json");
-//        myHeaders.append("Authorization", "Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+//        myHeaders.append("Authorization", "Bearer "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
 //        fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
 //            method: 'POST',
 //            body:    JSON.stringify(datasend),
@@ -422,7 +422,7 @@ module.exports = function(app, db) {
             args : [""]
         };*/
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
         fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryTest&args=%5B%22a%22%5D", { 
             method: 'GET',
             //body:    JSON.stringify(datasend),
@@ -459,7 +459,7 @@ module.exports = function(app, db) {
             args : [""]
         };*/
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
         fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22TRANSACTIONRECORD%22%5D", { 
             method: 'GET',
             //body:    JSON.stringify(datasend),
@@ -484,7 +484,7 @@ module.exports = function(app, db) {
             args : [""]
         };*/
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
         fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryHistoryByKey&args=%5B%22POC0%22%5D", { 
             method: 'GET',
             //body:    JSON.stringify(datasend),
@@ -509,7 +509,7 @@ module.exports = function(app, db) {
             args : [""]
         };*/
         var myHeaders = new Headers();
-        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
         fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryByKey&args=%5B%22POC0%22%5D", { 
             method: 'GET',
             //body:    JSON.stringify(datasend),
@@ -540,7 +540,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22POC%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -599,7 +599,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -630,7 +630,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22TMC%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -661,7 +661,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22TRANSACTIONRECORD%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -690,7 +690,7 @@ module.exports = function(app, db) {
 //            args : [""]
 //        };*/
 //        var myHeaders = new Headers();
-//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
 //        fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryData&args=%5B%22MATERIAL1%22%2C%22POC0%22%5D", { 
 //            method: 'GET',
 //            //body:    JSON.stringify(datasend),
@@ -715,7 +715,7 @@ module.exports = function(app, db) {
 //        };
 //        var myHeaders = new Headers();
 //        myHeaders.append( "Content-Type","application/json");
-//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+//        myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
 //        fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
 //            method: 'POST',
 //            body:    JSON.stringify(datasend),
@@ -747,7 +747,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -802,7 +802,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -840,7 +840,7 @@ module.exports = function(app, db) {
             console.log(fetchString);
 
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch(fetchString, { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -875,7 +875,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -930,7 +930,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -968,7 +968,7 @@ module.exports = function(app, db) {
             console.log(fetchString);
 
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch(fetchString, { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1002,7 +1002,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1057,7 +1057,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1095,7 +1095,7 @@ module.exports = function(app, db) {
             console.log(fetchString);
 
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch(fetchString, { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1127,7 +1127,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryHistoryByKey&args=%5B%22POC0%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1268,14 +1268,14 @@ module.exports = function(app, db) {
             var myHeaders = new Headers();
             //傳出去的body要跟這邊宣告的格式型態一樣
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
                 credentials: "include",
                 headers: myHeaders,
                 //headers: { 'Content-Type': "application/json; charset=utf-8" ,
-                         //"Authorization": "Bearer """"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY"},
+                         //"Authorization": "Bearer """"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ"},
             })
                .then(res => res.text())//回傳tx ID
                .then(text => res.send(text))
@@ -1306,12 +1306,12 @@ module.exports = function(app, db) {
         if(req.cookies.token == "" || req.cookies.token == null || req.cookies.username == "" || req.cookies.username == null){
             res.redirect('/login');
         }else{
-
+            //因為HarvestBatch跟ProductNo是compositekey，所以不能是空的
             var arguments = ["","","","","",
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
             arguments[0] = String(req.body.Name);
             arguments[1] = String(req.body.Efficacy);
@@ -1329,7 +1329,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1379,7 +1379,7 @@ module.exports = function(app, db) {
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
             arguments[0] = String(req.body.Name);
             arguments[1] = String(req.body.Efficacy);
@@ -1405,7 +1405,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1449,7 +1449,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1496,7 +1496,7 @@ module.exports = function(app, db) {
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
     //        arguments[0] = String(req.body.Name);
     //        arguments[1] = String(req.body.Efficacy);
@@ -1521,7 +1521,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1564,7 +1564,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1611,7 +1611,7 @@ module.exports = function(app, db) {
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
     //        arguments[0] = String(req.body.Name);
     //        arguments[1] = String(req.body.Efficacy);
@@ -1636,7 +1636,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1678,7 +1678,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1725,7 +1725,7 @@ module.exports = function(app, db) {
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
     //        arguments[0] = String(req.body.Name);
     //        arguments[1] = String(req.body.Efficacy);
@@ -1749,7 +1749,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1791,7 +1791,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1838,7 +1838,7 @@ module.exports = function(app, db) {
                             "","","","","",
                             "","","","","",
                             "","","","","",
-                            "","","",""];
+                            "","21","",""];
 
     //        arguments[0] = String(req.body.Name);
     //        arguments[1] = String(req.body.Efficacy);
@@ -1863,7 +1863,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
@@ -1905,7 +1905,7 @@ module.exports = function(app, db) {
                 args : [""]
             };*/
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity?peer=peer0.org1.example.com&fcn=queryAllByKey&args=%5B%22MATERIAL%22%5D", { 
                 method: 'GET',
                 //body:    JSON.stringify(datasend),
@@ -1977,7 +1977,7 @@ module.exports = function(app, db) {
             };
             var myHeaders = new Headers();
             myHeaders.append( "Content-Type","application/json");
-            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDA5MDAzMTAsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDA4NjQzMTB9.Vs6pVybL9jugWlc3QiTY9HJKLzSp4KcvYGyhuE29MgY");
+            myHeaders.append("Authorization", "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NDQwMDM2MTMsInVzZXJuYW1lIjoiSmltIiwib3JnTmFtZSI6Ik9yZzEiLCJpYXQiOjE1NDM5Njc2MTN9.f4wDdwo0g6fTvHTReuAA9SIcD5waR3e7Ulib6AN4MfQ");
             fetch("http://localhost:4000/channels/mychannel/chaincodes/unity", { 
                 method: 'POST',
                 body:    JSON.stringify(datasend),
