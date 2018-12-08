@@ -29,3 +29,5 @@
 整體使用情境是中藥材的區塊鏈溯源，從上游的農夫到下游的消費者，讓整體的資訊到可以上傳到區塊鏈上，
 完成資訊的透明化，且是可信任的資訊。每個節點(使用者)可以上傳資料，上傳資料可以獲得Token獎勵，
 也可以查詢資料，查詢資料需要消耗Token。
+
+![GITHUB](https://github.com/a037580238/supplychain/blob/master/nodejs_version/functions.PNG "functions")
