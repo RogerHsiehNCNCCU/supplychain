@@ -16,4 +16,16 @@
 
 5. 成功產生網頁在IP下的8000 Port
 
+![GITHUB](https://github.com/a037580238/supplychain/edit/master/nodejs_version/home.png "Home")
 
+然後要先註冊使用者以及Token才能進入到網頁中，而獲得的Token可以協助確認真實身分，
+目前Token的動態替換尚未完成，需要使用手動的方式去程式修改Token才能使用。
+
+![GITHUB](https://github.com/a037580238/supplychain/edit/master/nodejs_version/registerToken.png "registerToken")
+
+![GITHUB](https://github.com/a037580238/supplychain/edit/master/nodejs_version/registerUser.png "registerUser")
+
+登入完成後就可以使用網頁的功能，首先須InitToken讓Token發送到各個節點，
+整體使用情境是中藥材的區塊鏈溯源，從上游的農夫到下游的消費者，讓整體的資訊到可以上傳到區塊鏈上，
+完成資訊的透明化，且是可信任的資訊。每個節點(使用者)可以上傳資料，上傳資料可以獲得Token獎勵，
+也可以查詢資料，查詢資料需要消耗Token。
