@@ -5,7 +5,7 @@
 1. 進入supplychain/nodejs_version/fabric-1.2/balance-transfer/目錄底下
 此部分為參考fabric-samples github repo:
 [fabric-samples/balancetransfer](https://github.com/hyperledger/fabric-samples/tree/release-1.2/balance-transfer)
-注: 最新版本的Fabric目前是1.3，預計不久後將更新至1.3版本
+注: 最新版本的Fabric目前是1.4，預計不久後將更新至1.3版本
 
 2. 開啟Terminal，輸入./runApp.sh 啟動fabric網絡
 
