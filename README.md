@@ -1,6 +1,6 @@
 # supplychain
 
-## supplychain for medicnal material
+## supplychain for medicinal material
 
 ### There are two version of chaincode to present the supplychain.
 ### Use web page to call sdk and communicate to chaincode
