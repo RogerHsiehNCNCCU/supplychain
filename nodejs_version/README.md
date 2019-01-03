@@ -2,8 +2,8 @@
 
 annotation: Before you start the project, you must prepare the environment of Fabric. Please reference Hyperledger Fabric document.
 
-1. Change your directory to supplychain/nodejs_version/fabric-1.2/balance-transfer/
-This is referenced to [fabric-samples/balancetransfer](https://github.com/hyperledger/fabric-samples/tree/release-1.2/balance-transfer)
+1. Change your directory to supplychain/nodejs_version/fabric-1.2/balance-transfer/  
+This is referenced to [fabric-samples/balancetransfer](https://github.com/hyperledger/fabric-samples/tree/release-1.2/balance-transfer)  
 annotation: The latest version of Fabric is 1.4. We will update this project to 1.4 soon.
 
 2. Turn on terminal. Enter the instruction ./runApp.sh to start the shell file to start fabric network.
