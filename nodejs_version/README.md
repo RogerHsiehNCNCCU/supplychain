@@ -8,7 +8,7 @@ annotation: The latest version of Fabric is 1.4. We will update this project to 
 
 2. Turn on terminal. Enter the instruction ./runApp.sh to start the shell file to start fabric network.
 
-3. Turn on another terminal. Enter ./mytestAPIs.sh -node to start channel, chaincode and restful api.  
+3. Turn on another terminal. Enter ./mytestAPIs.sh -l node to start channel, chaincode and restful api.  
 The shell file mytestAPIs.sh is rewrited to start my chaincode that is unity.js under /artifacts/src/github.com/example_cc/node2/.
 
 4. Turn on another terminal and back to medicine directory. Enter instruction "npm run dev" to make a web which is connecting to the restful api we had started. So the web can communicate to the chaincode.
@@ -24,7 +24,7 @@ The shell file mytestAPIs.sh is rewrited to start my chaincode that is unity.js 
 
 2. 開啟Terminal，輸入./runApp.sh 啟動fabric網絡
 
-3. 開啟另一個Terminal，輸入./mytestAPIs.sh -node 來啟動channel及chaincode並產生restful api  
+3. 開啟另一個Terminal，輸入./mytestAPIs.sh -l node 來啟動channel及chaincode並產生restful api  
 使用mytestAPIs.sh是為啟用我寫的chaincode，在/artifacts/src/github.com/example_cc/node2/ 目錄下的unity.js
 
 4. 開啟另一個Terminal，回到medicine目錄下，使用npm run dev指令產生網頁與第3步產生的restful api連結，以與chaincode溝通
